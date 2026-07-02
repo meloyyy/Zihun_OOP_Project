@@ -1,0 +1,57 @@
+From 86ca4d85ada4f426114988f601f709ad2c3de155 Mon Sep 17 00:00:00 2001
+From: Mykyta Zihun <m.r.zihun@student.khai.edu>
+Date: Thu, 2 Jul 2026 20:19:38 +0300
+Subject: [PATCH] =?UTF-8?q?=D0=A2=D0=B5=D1=81=D1=82=D0=BE=D0=B2=D0=B8?=
+ =?UTF-8?q?=D0=B9=20=D0=BA=D0=BE=D0=BC=D1=96=D1=82?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+---
+ MainWindow.xaml.cs |  2 ++
+ UIDiagram.cd       | 19 +++++++++++++++++++
+ 2 files changed, 21 insertions(+)
+ create mode 100644 UIDiagram.cd
+
+diff --git a/MainWindow.xaml.cs b/MainWindow.xaml.cs
+index 3d77db4..c87d6da 100644
+--- a/MainWindow.xaml.cs
++++ b/MainWindow.xaml.cs
+@@ -23,6 +23,8 @@ public partial class MainWindow : Window
+         RefreshCourses();
+     }
+ 
++    //Тестування команди git stash
++
+     private void RefreshCourses(bool onlyMyCourses = false)
+     {
+         string search = SearchTextBox?.Text?.Trim().ToLower() ?? string.Empty;
+diff --git a/UIDiagram.cd b/UIDiagram.cd
+new file mode 100644
+index 0000000..c121a9d
+--- /dev/null
++++ b/UIDiagram.cd
+@@ -0,0 +1,19 @@
++﻿<?xml version="1.0" encoding="utf-8"?>
++<ClassDiagram MajorVersion="1" MinorVersion="1">
++  <Class Name="Zihun_OOP_Project_2026.MainWindow">
++    <Position X="10" Y="2.5" Width="1.5" />
++    <TypeIdentifier>
++      <HashCode>BQBAQCEQhAAAEAAAAAAAADAAgAAAAAAAAAAgABABAAA=</HashCode>
++      <FileName>MainWindow.xaml.cs</FileName>
++    </TypeIdentifier>
++    <Lollipop Position="0.2" />
++  </Class>
++  <Class Name="Zihun_OOP_Project_2026.App">
++    <Position X="7.75" Y="2.5" Width="1.5" />
++    <TypeIdentifier>
++      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
++      <FileName>App.xaml.cs</FileName>
++    </TypeIdentifier>
++  </Class>
++  <Font Name="Segoe UI" Size="9" />
++</ClassDiagram>
+\ No newline at end of file
+-- 
+2.50.1.windows.1
+
