@@ -23,6 +23,8 @@ public partial class MainWindow : Window
         RefreshCourses();
     }
 
+    //Тестування команди git stash
+
     private void RefreshCourses(bool onlyMyCourses = false)
     {
         string search = SearchTextBox?.Text?.Trim().ToLower() ?? string.Empty;
